@@ -1,1 +1,83 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Scott Garriott's Portfolio Website</title>
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<!-- normaizer link? -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+	<!--stylesheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet"> 
+  <!-- nav scripts -->
+  <script src="nav.js" defer></script>
+</head>
+
+<body class="body">
+	<!-- header of the page -->
+	<header class="primary-header">
+    <div class="nav-div">
+      <button class="mobile-nav-toggle bi bi-list"
+       aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span></button>
+		  <nav>
+        <!-- data atributes are custom atributes one can create, mainly for JS purposes -->
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="nav-list-item"><a id="about-me">About Me</a></li>
+                <li class="nav-list-item"><a href="#">Projects</a></li>
+                <li class="nav-list-item"><a href="#">Philosophy</a></li>
+                <li class="nav-list-item"><a id="contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+	</header>
+	<main>
+		<div class="scene-cube">
+            <div class="cube">
+                <div class="cube-face cube-face-1">1</div>
+                <div class="cube-face cube-face-2">2</div>
+                <div class="cube-face cube-face-3">3</div>
+                <div class="cube-face cube-face-4">4</div>
+                <div class="cube-face cube-face-5">5</div>
+                <div class="cube-face cube-face-6">6</div>
+            </div>
+        </div>
+     <!-- Welcome section -->
+      <div class="about-me" id="about-me">
+        <h3>Welcome to my webpage!</h3>
+        <p>I have a keen eye for detail and I love learning new things.
+           I am a great team player, one has to be if they want to DM.  
+           In my spare time I play table top role playing games. 
+           It is a great way to collaborate with your friends and make an interesting and compelling story at the same time.  
+           It gives me a performative outlet, which I was missing after I stopped acting after high school.</p>
+       </div>
+       <div>
+        <p>Here are a few ways I think being a dungeon master can help me with my web design career: </p>
+        <ul>
+          <li>It has prepared me to think on my feet. Being a DM is all about being adaptable, players always do what you are not expecting.</li>
+          <li>It has helped me learn to manage a group of people so everyone gets thier ideas heard.</li>
+          <li>Having started our game during the pandemic I have gotten alot better with general file organization. You gotta have all the characters and locations easily accessable!</li>
+        </ul>
+      </div>
+ <footer>
+     <div class="contact-me-div" id="contact-me">
+       <h3>Contact Me!</h3>
+        <ol class="contact-list">
+          <li><a href="https://www.linkedin.com/in/scott-garriott-8aa57a190/?midToken=AQFhHlzp843Gxw&midSig=1xSvyJA2Y6XpI1&trk=eml-email_pymk_02-header-32-profile&trkEmail=eml-email_pymk_02-header-32-profile-null-cgu6bm~ko3udhpq~f3-null-neptune%2Fprofile~vanity.view" target="_blank">Linkedin</a></li>
+          <li><a href="https://github.com/ScottGarriott" target="_blank">Github</a></li>
+        </ol>
+     </div>
+  </footer>
+
+    </main>
+    <script src="dice.js"></script>
+  </body>
+</html>
